@@ -73,9 +73,8 @@ Here are examples of user input and assistant output, pay attention to the score
 
 </example>
 
-
-
 ---------------------------
+
 <example>
     <user:input>
         Bears are at the door, did you leave the garbage out?
