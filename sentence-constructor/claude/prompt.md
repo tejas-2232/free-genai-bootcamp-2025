@@ -104,4 +104,14 @@ Here is an example of simple sentence structures.
 - try and provide a non-nested bulleted list
 - talk about the vocabulary but try to leave out the japanese words because the student can refer to the vocabulary table.
 
-Student Input: Did you see the raven this morning? They were looking at our garden.
+## Teacher Tests
+
+Please read this file so you can see more examples to provide better output
+<file>japanese-teaching-test.md</file>
+
+
+## Last Checks
+
+- Make sure you read all the example files tell me that you have.
+- Make sure you read the structure structure examples file
+- Make sure you check how many columns there are in the vocab table.
