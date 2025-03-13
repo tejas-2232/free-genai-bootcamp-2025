@@ -106,7 +106,7 @@ Here is an example of simple sentence structures.
 
 ## Teacher Tests
 
-Please read this file so you can see more examples to provide better output
+Please read this file so you can see more examples to provide better output - 
 <file>japanese-teaching-test.md</file>
 
 
