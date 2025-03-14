@@ -16,8 +16,6 @@ Beginner, JLPT5
 - Do not use romaji when showing japanese except in the table of vocabulary.
 - when the student makes attempt, interpet their reading so they can see what that actually said
 
-Student Input: Did you see the raven this morning? They were looking at our garden.
-
 ## Agent flow
 
 The following agent has following steps:
