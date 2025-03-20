@@ -438,12 +438,12 @@ Student Input: Did you see the raven this morning? They were looking at our gard
 Vocabulary Table:
 
 Japanese	            Romaji	        English
-鴉（からす）	        karasu	          raven
-朝（あさ）	            asa	             morning
+鴉（からす）	            karasu	         raven
+朝（あさ）	            asa	         morning
 庭（にわ）	            niwa	         garden
-見た（みた）	        mita	         saw/seen
-見ている（みている）	 miteiru	      looking
-私たちの（わたしたちの） watashitachi no	our
+見た（みた）	            mita	         saw/seen
+見ている（みている）	miteiru	         looking
+私たちの（わたしたちの） watashitachi no        our
 
 Sentence Structure:
 [Time] [Subject] [Verb], [Subject] [Verb-present] [Object]
