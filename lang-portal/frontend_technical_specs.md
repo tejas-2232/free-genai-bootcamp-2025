@@ -2,12 +2,14 @@
 
 ## pages
 
-### Dashboard /dashboard
+### Dashboard `/dashboard`
 
+#### Purpose
 
+The purpose of this page is to show a summary of learning and act as a the default page when user visits the web app
 
+#### Components
 
-This page contains the following components:
 - Last study session
     - shows last activity used
     - shows when last activity used
@@ -28,10 +30,83 @@ This page contains the following components:
 - start studying button
     - goes to study activity page
 
+#### Needed API Endpoints
 
-we'll need following API endpoints to power this page
-- GET /dashboard/last_study_session
-- GET /dashboard/study_progress
-- GET /dashboard/quick_stats
+- GET /api/dashboard/last_study_session
+- GET /api/dashboard/study_progress
+- GET /api/dashboard/quick_stats
 
 
+### Study Activity `/study_activity`
+
+#### Purpose
+
+The purpose of this page is to show a collection of study activities with a thumbnail and it's name, to either launch or view the study activity
+
+#### Components
+
+- Study activity card
+    - shows thumbnail of the study activity
+    - the name of the study activity
+    - a launch button to take us to launch page
+    - the view page to view more information about past study sessions for this study activity
+
+#### Needed API Endpoints
+
+- GET /api/study_activities
+    - shows the study activity progress
+    - shows the study activity summary
+    - has a link to the group ( to view group)
+
+#### Needed API Endpoints
+
+- GET /api/study_activities
+
+### Study Activity Show `/study_activity/:id`
+
+#### Purpose
+
+The purpose of this page is to show a specific study activity with it's details and past study sessions
+
+#### Components
+
+- Name of study activity
+- Thumbnail of study activity
+- Description of study activity
+- Launch Button
+- Study activities Paginated List
+    - id
+    - activity_name
+    - group name
+    - start time
+    - end time (inferred by the last word_review_item submitted)
+    - number of review items
+
+#### Needed API Endpoints
+
+- GET /api/study_activity/:id
+- GET /api/study_activity/:id/study_sessions
+
+### Study Activity Launch `/study_activity/:id/launch`
+
+#### Purpose
+
+The purpose of this page is to Launch a study activity
+
+#### Components
+
+- Name of study activity
+- Launch form
+    - Select field for group
+    - Launch now button
+
+## Bahavior
+
+After the form is submitted, a new tab opens with the study acitivty baes on its URL provided in the database
+
+Also after the form is submitted the page will redirect to the study session show page
+
+
+#### Needed API Endpoints
+
+- POST /api/study_activities

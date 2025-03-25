@@ -62,7 +62,10 @@ We have following tables:
 - GET /api/dashboard/quick_stats
 - GET /api/study_activity/:id
 - GET /api/study_activity/:id/study_sessions
-
+- POST /api/study_activities
+    - required parameters:
+        - group_id
+        - study_activity_id
 
 - GET /api/words
 - GET /api/words/:id
