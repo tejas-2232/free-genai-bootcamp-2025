@@ -57,13 +57,15 @@ We have following tables:
 ### API Endpoints
 
 
-- GET /dashboard/last_study_session
-- GET /dashboard/study_progress
-- GET /dashboard/quick_stats
+- GET /api/dashboard/last_study_session
+- GET /api/dashboard/study_progress
+- GET /api/dashboard/quick_stats
+- GET /api/study_activity/:id
+- GET /api/study_activity/:id/study_sessions
 
 
-- GET /words
-- GET /words/:id
-- GET /groups
-- GET /groups/:id
-- GET /groups/:id/words
+- GET /api/words
+- GET /api/words/:id
+- GET /api/groups
+- GET /api/groups/:id
+- GET /api/groups/:id/words
