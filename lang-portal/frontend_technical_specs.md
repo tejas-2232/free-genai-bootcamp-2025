@@ -200,6 +200,50 @@ The purpose of this page is to show a specific group with it's details and words
     - Clicking the Japanese word will take us to the word show page
 
 #### Needed API Endpoints
-- GET /api/groups/:id
+- GET /api/groups/:id (the name and groups stats)
+- GET /api/groups/:id/words
+- GET /api/groups/:id/study_sessions
 
 <hr>
+
+### Study Sessions Index `/study_sessions`
+
+#### Purpose
+The purpose of this page is to show a list of study sessions in our database.
+
+#### Components
+- Paginated study session list
+    - Columns
+        - Id
+        - Activity Name
+        - Group Name
+        - Start Time
+        - End Time
+        - Number of review items
+    - Clicking the session Id will take us to the study session show page
+
+#### Needed API Endpoints
+- GET /api/study_sessions
+
+<hr>
+
+### Study Session Show `/study_sessions/:id`
+
+#### Purpose
+The purpose of this page is to show a specific study session information
+
+#### Components
+
+- Study Session Details
+    - Activity Name
+    - Group Name
+    - Start Time
+    - End Time
+    - Number of review items
+- Words Review Items (Paginated List of Words)
+    - should use the same component as the words index page
+
+#### Needed API Endpoints
+- GET /api/study_sessions/:id
+- GET /api/study_sessions/:id/words
+
