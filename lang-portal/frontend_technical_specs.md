@@ -133,12 +133,32 @@ The purpose of this page is to show a collection of all words in our database
         - Study Statistics
             - Correct Count
             - Wrong Count
-        - Word Groups 
-            - show an a series of pills eg. tags
-            - when group name is clicked it will take us to the group show page
+    - Pagination with 100 items per page
+    - Clicking the Japanese word will take us to the word show page
 
 #### Needed API Endpoints
 
+- GET /api/words/
+
+<hr>
+
+### Word Show `/words/:id`
+
+#### Purpose
+The purpose of this page is to show information about a specific word.
+
+#### Components
+- Japanese
+- Romaji
+- English
+- Study Statistics
+    - Correct Count
+    - Wrong Count
+- Word Groups 
+    - show an a series of pills eg. tags
+    - when group name is clicked it will take us to the group show page
+
+#### Needed API Endpoints
 - GET /api/words/:id
 
 <hr>
@@ -160,3 +180,26 @@ The purpose of this page is to show a list of groups in our database.
 
 <hr>
 
+### Word Group Show `/groups/:id`
+
+#### Purpose
+The purpose of this page is to show a specific group with it's details and words
+
+#### Components
+- Name of group
+- Description of group
+- Words in group
+    - Columns
+        - Japanese
+        - romaji
+        - english
+        - Study Statistics
+            - Correct Count
+            - Wrong Count
+        - Pagination with 100 items per page
+    - Clicking the Japanese word will take us to the word show page
+
+#### Needed API Endpoints
+- GET /api/groups/:id
+
+<hr>
