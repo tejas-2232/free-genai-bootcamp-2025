@@ -247,3 +247,18 @@ The purpose of this page is to show a specific study session information
 - GET /api/study_sessions/:id
 - GET /api/study_sessions/:id/words
 
+### Settings Page `/settings`
+
+#### Purpose
+The purpose of this page is to make configuration to the study portal
+
+#### Components
+- Theme Selection eg- Light, Dark, System Default
+- Reset History button
+    - this will delete all study sessions and word review items
+- Full reset button
+    - This will drop all table and recreate with seed data
+
+#### Needed API Endpoints
+- POST /api/reset_history
+- POST /api/full_reset
