@@ -70,5 +70,16 @@ We have following tables:
 - GET /api/words
 - GET /api/words/:id
 - GET /api/groups
+    - pagination with 100 items per page
+
 - GET /api/groups/:id
+
 - GET /api/groups/:id/words
+- GET /api/groups/:id/study_sessions
+- GET /api/study_sessions
+    - pagination with 100 items per page
+
+-GET /api/study_sessions/:id
+
+- POST /api/reset_history
+- POST /api/full_reset
