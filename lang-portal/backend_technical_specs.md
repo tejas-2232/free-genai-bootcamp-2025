@@ -83,3 +83,6 @@ We have following tables:
 
 - POST /api/reset_history
 - POST /api/full_reset
+- POST /api/study_sessions/:id/words/:word_id/review
+    - required parameters:
+        - correct 
