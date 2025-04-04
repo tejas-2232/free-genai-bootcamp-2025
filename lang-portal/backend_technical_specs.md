@@ -18,6 +18,8 @@ A language learning school wants to build a prototype of learning portal which w
 
 ## Database Schema
 
+Our database will be a single sqlite database called `words.db` that will be in the root of the project folder of `backend_go`
+
 We have following tables:
 
 - words - store vocabulary words
@@ -144,10 +146,12 @@ Returns quick statistics about the user's study progress.
 - study_activity_id integer
 
 #### JSON Response
+```json
 {
   "id": 124,
   "group_id": 123
 }
+```
 
 ### GET /api/words
 - pagination with 100 items per page
@@ -406,3 +410,18 @@ The file names should look like this:
 ```
 
 ### seed data
+
+- This task will import json files and transform them into target data for our database
+- all seed files live in the 'seeds' folder.
+
+- in our task, we should have DSL to specific each seed file and its expected group word name
+
+```json
+[
+ {
+    "kanji":"払う",
+    "romaji":"harau",
+    "english":"to pay"
+ }
+]
+```
