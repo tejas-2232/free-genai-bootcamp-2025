@@ -1,8 +1,11 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"lang-portal-backend/internal/handlers"
+
+	"github.com/gin-gonic/gin"
+
+	"lang-portal/internal/handlers"
 )
 
 func main() {
