@@ -35,8 +35,20 @@ func main() {
 	}
 	defer db.Close()
 
+	// initialize handlers
+	h := handlers.NewHandlers(
+		dashboardService,
+		wordService,
+		groupService,
+		studyActivityService,
+		studySessionService,
+	)
+
 	//create gin router
 	r := gin.Default()
+
+	// add middleware
+	r.Use(middleware.ErrorHandler())
 
 	// Setup routes
 	handlers.RegisterRoutes(r)
