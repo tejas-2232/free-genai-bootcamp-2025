@@ -6,6 +6,7 @@ import (
 	"path/filepath"
 
 	"lang-portal-backend/internal/handlers"
+	"lang-portal-backend/internal/models"
 
 	"github.com/gin-gonic/gin"
 
@@ -26,6 +27,13 @@ func main() {
 	if err := os.MkdirAll(dbDir, 0755); err != nil {
 		log.Fatal("Failed to create database directory", err)
 	}
+
+	//initialize database
+	db, err := models.NewDB(dbPath)
+	if err != nil {
+		log.Fatal("Failed to connect to database", err)
+	}
+	defer db.Close()
 
 	//create gin router
 	r := gin.Default()
