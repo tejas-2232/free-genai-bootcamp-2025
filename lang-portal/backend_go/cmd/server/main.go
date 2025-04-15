@@ -65,6 +65,9 @@ func main() {
 	// Setup routes
 	handlers.RegisterRoutes(r)
 
-	// Start server
-	r.Run(":8080")
+	log.Printf("server starting on http://localhost:8081")
+
+	if err := r.Run(":8081"); err != nil {
+		log.Fatal("Failed to start server", err)
+	}
 }
