@@ -35,6 +35,13 @@ func main() {
 	}
 	defer db.Close()
 
+	//initialize services
+	dashboardService := handlers.NewDashboardService(db)
+	wordService := handlers.NewWordService(db)
+	groupService := handlers.NewGroupService(db)
+	studyActivityService := handlers.NewStudyActivityService(db)
+	studySessionService := handlers.NewStudySessionService(db)
+
 	// initialize handlers
 	h := handlers.NewHandlers(
 		dashboardService,
